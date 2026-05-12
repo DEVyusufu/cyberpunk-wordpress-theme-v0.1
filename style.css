@@ -1,0 +1,115 @@
+/*
+Theme Name: ZEVA Cyberpunk
+Theme URI: https://www.zeva.be
+Author: Yusuf
+Description: Modern Deep Tech / Futuristische template.
+Version: 2.0
+Text Domain: zeva-cyberpunk
+*/
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@500&display=swap');
+
+:root {
+    --bg-body: #050507;
+    --bg-card: #0d0d10;
+    --accent: #00d1ff;
+    --text-main: #e2e2e6;
+    --text-dim: #8a8a98;
+    --border: rgba(255, 255, 255, 0.06);
+    --glass: rgba(13, 13, 16, 0.85);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+/* Header & Nav */
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: -0.5px;
+    color: #fff;
+}
+
+.accent-dot { color: var(--accent); }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-list a:hover { color: #fff; }
+
+.system-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+
+.pulse-dot {
+    width: 6px;
+    height: 6px;
+    background: #00ff88;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+/* Main Area */
+.site-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-area {
+    flex: 1;
+}
